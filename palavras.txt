@@ -1,0 +1,5 @@
+porta
+cavalo
+computador
+servidor
+mesa
