@@ -31,6 +31,12 @@ public class Cliente {
 
             System.out.print("Digite uma das opções: 'iniciarjogo' ou 'end':");
             fromUser = teclado.nextLine();
+
+            while(!fromUser.equalsIgnoreCase("iniciarjogo") && !fromUser.equalsIgnoreCase("end")) {
+                System.out.println("Opção desconhecida. Digite uma das opções: 'iniciarjogo' ou 'end':");
+                fromUser = teclado.nextLine();
+            }
+
             output.println(fromUser);
 
             fromServer = input.readLine();
