@@ -1,14 +1,5 @@
 import java.io.*;
 import java.net.*;
-/*
- *  Cliente TCP - versão simplificada para o laboratório de redes
- *
- *
- *  Este é um programa cliente simples que ler uma string via teclado e
- *  envia o texto como requisição para um servidor. O código foi
- *  adaptador do SUN Java Tutorial.
- *
- */
 
 public class Cliente {
     public static void main(String[] args) {

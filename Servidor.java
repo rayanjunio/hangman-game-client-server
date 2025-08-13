@@ -1,14 +1,5 @@
 import java.net.*;
 import java.io.*;
-/*
- *  Servidor TCP - versão simplificada para o laboratório de redes
- *
- *
- *  Este é um programa servidor simples, sem thread, para atender a um
- *  protocolo genérico implementado na classe Protocolo. O código original
- *  foi tirado do SUN Java Tutorial.
- *
- */
 
 public class Servidor {
     private static int porta = 4444;
@@ -45,7 +36,6 @@ public class Servidor {
                 while ((inputLine = inStream.readLine()) != null) {
                     inputLine = inputLine.toLowerCase();
 
-                    // trata a requisição do cliente
                     switch (inputLine) {
                         case "iniciarjogo":
                             iniciarJogo(arquivo, inStream, outStream);
@@ -82,7 +72,7 @@ public class Servidor {
 
         while (true) {
             String tentativa = inStream.readLine();
-            if (tentativa.isBlank()) {
+            if (tentativa.isBlank() || tentativa.length() != 1) {
                 outStream.println("Tentativa inválida");
                 continue;
             }
@@ -92,11 +82,6 @@ public class Servidor {
             if (tentativa.equals("end")) {
                 outStream.println("Encerrando jogo...");
                 break;
-            }
-
-            if (tentativa.length() != 1) {
-                outStream.println("Tentativa inválida");
-                continue;
             }
 
             char letra = tentativa.charAt(0);
