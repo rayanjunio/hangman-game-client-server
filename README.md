@@ -1,2 +1,2 @@
-# server-client-hangman-game
+# hangman-game-client-server
 Hangman game using sockets in java
