@@ -3,3 +3,8 @@ cavalo
 computador
 servidor
 mesa
+raio
+trovão
+letra
+cachorro
+papagaio

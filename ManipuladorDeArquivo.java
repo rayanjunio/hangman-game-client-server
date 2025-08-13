@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class ManipuladorDeArquivo {
   private final String caminhoArquivo = "palavras.txt";
-  private final int MAX_PALAVRAS = 5;
+  private final int MAX_PALAVRAS = 10;
 
   public ManipuladorDeArquivo() {}
 
